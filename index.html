@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro - Menina Trufa</title>
+  <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+  <div class="container">
+    <img src="img/logo.png" alt="Menina Trufa Logo" class="logo">
+    <h2>Cadastro - Menina Trufa</h2>
+    <form id="cadastroForm" method="POST" action="processar_formulario.php" onsubmit="return validarForm()">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
